@@ -230,6 +230,10 @@ bar {
     #Border
     default_border pixel 3
 
+    #Move back and forth on workspaces
+    bindsym $mod+Next workspace next
+    bindsym $mod+Prior workspace prev
+
     #Spotify Shortcut
     bindsym $mod+m exec flatpak run com.spotify.Client
 
