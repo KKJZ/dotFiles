@@ -237,6 +237,10 @@ bar {
     #Spotify Shortcut
     bindsym $mod+m exec flatpak run com.spotify.Client
 
+    #Screenshot tools
+    bindsym Print exec        ~/.config/sway/screenshot.sh
+    bindsym Shift+Print exec  ~/.config/sway/screenshot_slurp.sh | wl-copy
+
     #Gnome theme import 
     #gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-Dark'  
     #gsettings set org.gnome.desktop.interface icon-theme 'Adwaita-Dark'
