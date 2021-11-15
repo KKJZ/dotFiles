@@ -285,7 +285,8 @@ bar {
     # Lockscreen
     bindsym $mod+l exec $lock
     # Lock on screen close
-    bindswitch --reload --locked lid:on exec $lock
+    bindswitch --reload lid:off exec $lock
+    bindswitch --reload --locked lid:off exec $lock
 
     ## SCRIPTS
     # Sway fading script
