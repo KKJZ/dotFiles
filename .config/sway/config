@@ -47,7 +47,7 @@ exec swayidle -w \
 #
 # Example configuration:
 #
-   input "2:8:AlpsPS/2_ALPS_GlidePoint"  {
+   input "1267:12679:ELAN0672:00_04F3:3187_Touchpad"  {
        dwt enabled
        tap enabled
        natural_scroll enabled
@@ -222,11 +222,6 @@ bar {
     set $menu rofi -show drun -show-icons -icon-theme "Papirus-Dark"
     # Custom Lock Script
     set $lock bash ~/.config/sway/lock.sh
-    # Gnome theme import 
-    # gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-Dark'  
-    # gsettings set org.gnome.desktop.interface icon-theme 'Adwaita-Dark'
-    # GTK Theme
-    set $gnome-schema org.gnome.desktop.interface
     # Added gaps 
 	gaps outer 5
 	gaps inner 5
@@ -293,11 +288,13 @@ bar {
     exec python3 ~/.config/sway/swayfader.py
 
     exec_always {
-    # gsettings set $gnome-schema gtk-theme 'Otis'
-    # gsettings set $gnome-schema icon-theme 'icons'
-    # gsettings set $gnome-schema cursor-theme 'Your cursor Theme'
-    # gsettings set $gnome-schema font-name 'Your font name'
+        gsettings set org.gnome.desktop.interface gtk-theme Kripton
+        gsettings set org.gnome.desktop.wm.preferences theme Kripton
+        gsettings set org.gnome.desktop.interface icon-theme Material-Black-Cherry-Suru
+        # gsettings set $gnome-schema cursor-theme 'Your cursor Theme'
+        # gsettings set $gnome-schema font-name 'Your font name'
     }
 
+# Custom END
     
 include /etc/sway/config.d/*
