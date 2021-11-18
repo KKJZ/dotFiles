@@ -32,7 +32,6 @@ output * bg ~/.config/sway/wallpaper1920x1200.jpeg fill
 
 ### Idle configuration
 #
-# Example configuration:
 #
 exec swayidle -w \
     timeout 600 $lock \
@@ -45,7 +44,6 @@ exec swayidle -w \
 
 ### Input configuration
 #
-# Example configuration:
 #
    input "1267:12679:ELAN0672:00_04F3:3187_Touchpad"  {
        dwt enabled
